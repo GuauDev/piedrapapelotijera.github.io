@@ -1,6 +1,6 @@
 var resultado
-var puntosJugador
-var puntosPc
+var puntosJugador=0
+var puntosPc=0
 var ataqueJugador
 var ataqueEnemigo
 const tarjeta=document.getElementById('tarjeta')

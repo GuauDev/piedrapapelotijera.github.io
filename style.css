@@ -15,6 +15,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 #puntaje{
     position: fixed;
@@ -42,6 +43,7 @@ main h2{
     font-family: 'MuseoModerno', cursive;
     color: var(--c3);
     top: 70px;
+    text-align: center;
     font-size: xx-large;
     font-weight: 600;
 }
@@ -68,7 +70,7 @@ main h2{
    color: var(--c4);
 }
 #tarjeta{
-    display: flex;
+    display: none;
     position: fixed;
     height: 300px;
     width: 350px;
@@ -91,4 +93,15 @@ main h2{
     border: transparent;
     border-radius: 4px;
     padding: 5px;
+}
+@media (max-width:400px) {
+    main h2{
+        position: static;
+    }
+
+}
+@media (max-height:435px) {
+    #ataques-botones{
+        flex-direction: row;
+    }
 }
