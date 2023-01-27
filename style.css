@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+:root{
+    --c1:#062925;
+    --c2:#044A42;
+    --c3:#3A9188;
+    --c4:#B8E1DD;
+}
+main{
+    background-color: var(--c1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#puntaje{
+    position: fixed;
+    color: var(--c4);
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    right: 0;
+    margin-right: 50px;
+    margin-top:10px ;
+    border:2px var(--c4) solid;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .3s;
+}
+#puntaje:hover{
+    color: var(--c3);
+    border-color: var(--c2);
+    transform: rotate(2deg) translateY(10px);
+    
+}
+
+
+main h2{
+    position: fixed;
+    font-family: 'MuseoModerno', cursive;
+    color: var(--c3);
+    top: 70px;
+    font-size: xx-large;
+    font-weight: 600;
+}
+#ataques-botones{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+#ataques-botones button{
+    background: transparent;
+    border-color: whitesmoke;
+    color: var(--c3);
+    padding: 10px;
+    height: 60px;
+    transition: .2s;
+    height: 62px;
+    width: 62px;
+}
+#ataques-botones button:hover{
+   width: 90px;
+   height: 90px;
+   transform: rotate(-3deg);
+   color: var(--c4);
+}
+#tarjeta{
+    display: flex;
+    position: fixed;
+    height: 300px;
+    width: 350px;
+    background-color:#fea;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+#tarjeta>div{
+    display: flex;
+    justify-content: flex-end;
+}
+#tarjeta #button-ok{
+    background-color:var(--c3);
+    border: transparent;
+    border-radius: 4px;
+    padding: 5px;
+}
